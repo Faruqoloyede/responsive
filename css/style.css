@@ -1,0 +1,228 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.hero{
+    height: 100vh;
+    width: 100%;
+    background-image: url('../img/download\ \(2\).jpeg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.nav-link{
+    padding:20px 20px;
+    
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav ul li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 25px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: black;
+    text-transform: uppercase;
+    cursor: pointer;
+    font-family: Arial, Helvetica, sans-serif;
+    transition: .4s;
+}
+nav ul li a:hover{
+    border-bottom: 1px solid rgb(58, 204, 58);
+}
+.btn{
+    background: none;
+    border: none;
+    outline: none;
+    font-size: 16px;
+    text-transform: uppercase;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: .4s;
+}
+.btn:hover{
+    border-bottom: 1px solid rgb(58, 204, 58);
+}
+.button{
+    background:rgb(58, 204, 58);
+    outline: none;
+    border: none;
+    padding: 12px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.button:hover{
+    background: transparent;
+    border: 1px solid rgb(58, 204, 58);
+    color: black;
+}
+.logo{
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 30px;
+    font-family: cursive;
+    color: black;
+    font-weight: 300;
+}
+.content{
+    margin: 10%;
+}
+.content h1{
+    color: white;
+    text-transform: capitalize;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size:40px;
+    margin-bottom: 20px;
+}
+.content p{
+    color: white;
+    font-size: 16px;
+    font-family: sans-serif;
+    font-weight:100;
+    margin-bottom: 20px;
+}
+.content button{
+    background:rgb(58, 204, 58);
+    outline: none;
+    border: none;
+    padding: 12px;
+    color: white;
+    text-transform: uppercase;
+    font-size: 16px;
+    border-radius: 15px;
+}
+.content button:hover{
+    background: transparent;
+    border: 1px solid rgb(58, 204, 58);
+}
+.menubar{
+    display:none;
+    cursor: pointer;
+    
+}
+
+.sidebar{
+    height: 100%;
+    position: fixed;
+    top: 0;
+    right: 0%;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.3 ease-in;
+    padding-top: 60px;
+    display: none;
+    
+}
+.sidebar a{
+    padding: 8px 8px 8px 40px;
+    display: block;
+    font-size: 25px;
+    color: black;
+    text-decoration: none;
+    transition: 0.3s;
+    text-transform: capitalize;
+    cursor: pointer;
+}
+.closebtn{
+    position: absolute;
+    top: 10px;
+    right: 25px;
+    margin-left: 50px;
+}
+.service{
+    background-color: white;
+    width: 100%;
+    
+
+}
+.title h2{
+    color: black;
+    text-transform: capitalize;
+    margin-top: 25px;
+    font-family: sans-serif;
+    margin-bottom: 16px;
+}
+.title p{
+    color: black;
+    font-size:16px;
+    font-family: sans-serif;
+    margin-bottom: 20px;
+}
+.pra img{
+    height: auto;
+    width: 400px;
+}
+.pra{
+    width: 1130px;
+    max-width: 95%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.pra ul li{
+    color: black;
+    text-transform: capitalize;
+    line-height:1.5em;
+    font-size:16px;
+}
+.pra button{
+    background-color:rgb(58, 204, 58);
+    border: none;
+    outline: none;
+    padding: 12px;
+    margin-top: 20px;
+    margin-left: 20px;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.pra button:hover{
+    background: transparent;
+    border: 1px solid rgb(58, 204, 58);
+    color: black;
+}
+
+@media screen and (max-width:600px){
+    .menubar{
+        display: flex;
+    }
+    nav ul li a{
+        display: none;
+    }
+    .btn{
+        display: none;
+    }
+    .button{
+        display: none;
+    }
+    .sidebar{
+        display: block;
+    }
+    .sidebar .btn{
+        display: block;
+    }
+    .sidebar .button{
+        display: block;
+    }
+    .pra{
+        display: block;
+    }
+    .pra ul li{
+        margin-left: 25px;
+        margin-top: 20px;
+    }
+    .pra button{
+        margin-left:8%;
+    }
+
+}
