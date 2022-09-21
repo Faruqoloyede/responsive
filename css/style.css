@@ -99,50 +99,19 @@ nav ul li a:hover{
     text-transform: uppercase;
     font-size: 16px;
     border-radius: 15px;
+    cursor: pointer;
 }
 .content button:hover{
     background: transparent;
     border: 1px solid rgb(58, 204, 58);
 }
-.menubar{
+.openMenu{
     display:none;
     cursor: pointer;
-    
-}
-
-.sidebar{
-    height: 100%;
-    position: fixed;
-    top: 0;
-    right: 0%;
-    background-color: white;
-    overflow-x: hidden;
-    transition: 0.3 ease-in;
-    padding-top: 60px;
-    display: none;
-    
-}
-.sidebar a{
-    padding: 8px 8px 8px 40px;
-    display: block;
-    font-size: 25px;
-    color: black;
-    text-decoration: none;
-    transition: 0.3s;
-    text-transform: capitalize;
-    cursor: pointer;
-}
-.closebtn{
-    position: absolute;
-    top: 10px;
-    right: 25px;
-    margin-left: 50px;
 }
 .service{
     background-color: white;
     width: 100%;
-    
-
 }
 .title h2{
     color: black;
@@ -185,15 +154,19 @@ nav ul li a:hover{
     color: white;
     border-radius: 15px;
     cursor: pointer;
+    text-transform: capitalize;
 }
 .pra button:hover{
     background: transparent;
     border: 1px solid rgb(58, 204, 58);
     color: black;
 }
+.sideMenu{
+    display: none;
+}
 
 @media screen and (max-width:600px){
-    .menubar{
+    .openMenu{
         display: flex;
     }
     nav ul li a{
@@ -205,24 +178,70 @@ nav ul li a:hover{
     .button{
         display: none;
     }
-    .sidebar{
+    .sideMenu{
+        height: 60%;
+        position: fixed;
+        top: 0;
+        right: 0%;
+        background-color: white;
+        overflow-x: hidden;
+        transition: 0.3 ease-in;
+        padding-top: 60px;
+        display:none;
+        overflow: hidden;
+        width: 50%;
+    }
+    .sideMenu a{
+        padding: 8px 8px 8px 40px;
+        display: block;
+        font-size: 25px;
+        color: black;
+        text-decoration: none;
+        transition: 0.3s;
+        text-transform: capitalize;
+        cursor: pointer;
+        margin-bottom:30px;
+        text-align: center;
+    }
+    .closeMenu{
+        position: absolute;
+        top: 20px;
+        right: 25px;
+        margin-left: 50px;
+        height: auto;
+        width: 20;
+    }
+    .sideMenu .btn{
+        display: block;
+        font-size: 25px;
+        text-align: center;
+        margin-left:95px;
+    }
+    .sideMenu .button{
         display: block;
     }
-    .sidebar .btn{
-        display: block;
+    .content h1{
+        text-align: center;
+        margin-top: 50%;
     }
-    .sidebar .button{
-        display: block;
+    .content p{
+        text-align: center;
+        margin-top: 20px;
+        margin-bottom: 50px;
     }
     .pra{
-        display: block;
+        display: flex;
+        flex-direction: column;
+    }
+    .title h2{
+        margin-top: 50px;
+        font-size: 30px;
     }
     .pra ul li{
-        margin-left: 25px;
-        margin-top: 20px;
+        margin-left: 50px;
+        margin-bottom: 10px;
     }
-    .pra button{
-        margin-left:8%;
+    .pra ul li:first-child{
+        margin-top: 30px;
     }
-
 }

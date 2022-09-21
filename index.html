@@ -7,13 +7,13 @@
     <title>responsive</title>
     <script src="https://kit.fontawesome.com/7e91fed0e3.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" href="./fontawesome/css/font-awesome.min.css">
 </head>
 <body>
     <div class="hero">
         <div class="nav-link">
             <nav>
                 <a href="#" class="logo">kitchen</a>
-                <i class="fas fa-bars"></i>
                 <ul>
                     <li><a href="#">home</a></li>
                     <li><a href="#">about</a></li>
@@ -22,22 +22,21 @@
                 </ul>
                 <a href="#"><button type="button" class="btn">log in</button></a>
                 <a href="#"><button type="button" class="button">subscribe</button></a>
-                <span class="menubar"><img src="img/img_520301.png" height="20" width="20" onclick=" openNav()"></span>
+                <span class="openMenu"><img src="img/img_520301.png" height="20" width="20" ></span>
             </nav>
             <div class="content">
                 <h1>the ultimate cooking<br> community</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora minus ipsam cum facere velit modi et. Mollitia cumque tempora nobis.</p>
-                <button type="button">subscribe</button>
+                <p style="text-align:center;"><button type="button">subscribe</button></p>
             </div>
         </div>
-        <div class="sidebar" id="sidenav">
-            <a href="#" class="closebtn"><img src="img/images__2_-removebg-preview (3).png" height="20" width="20" onclick="closeNav()"></a>
+        <div class="sideMenu">
+            <a href="#" class="closeMenu"><img src="img/icon-close-menu.svg"></a>
             <a href="#">home</a>
             <a href="#">about</a>
             <a href="#">service</a>
             <a href="#">contact</a>
-            <a href="#"><button type="button" class="btn">log in</button></a>
-            <a href="#"><button type="button" class="button">subscribe</button></a>
+            <p style="text-align:center;"><button type="button" class="btn">log in</button></p>
         </div>
     </div>
 
@@ -54,19 +53,12 @@
                     <li>simplify grocery shopping with one our once click list builder</li>
                     <li>find inspiration from others in the cullner community</li>
                     <li>create more moment with homemade food</li>
-                    <button type="button">get started</button>
+                    <p style="text-align: center;"><button type="button">get started</button></p>
                 </ul>
                
             </div>
         </div>
     </section>
-    <script>
-        function openNav() {
-            document.getElementById("sidenav").style.width="50%";
-        }
-        function closeNav() {
-            document.getElementById("sidenav").style.width="0%";
-        }
-    </script>
+    <script src="js/app.js"></script>
 </body>
 </html>
